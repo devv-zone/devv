@@ -1,2 +1,3 @@
 # Hippo
-Deploy your community app with one click
+
+Build your community app in seconds
