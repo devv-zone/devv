@@ -1,0 +1,25 @@
+{
+  "name": "client",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "author": "",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/ui": "^2.14.2"
+  },
+  "devDependencies": {
+    "nuxt": "^3.11.1",
+    "typescript": "^5.4.3",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0",
+    "vue-tsc": "^2.0.7"
+  }
+}

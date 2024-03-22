@@ -1,38 +1,28 @@
 {
-  "name": "hippo",
+  "name": "devv",
   "type": "module",
   "version": "0.0.0",
-  "private": true,
   "description": "Build your community app in seconds",
   "author": "Charlie Wang <18888351756@163.com>",
+  "license": "MIT",
+  "keywords": [],
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "release": "bumpp --commit --push --tag",
+    "dev:client": "pnpm -F client dev",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
-  "dependencies": {
-    "@nuxt/ui": "^2.14.2"
-  },
   "devDependencies": {
     "@antfu/eslint-config": "^2.9.0",
-    "bumpp": "^9.4.0",
+    "@types/node": "^20.11.30",
     "eslint": "npm:eslint-ts-patch@^8.57.0-0",
     "eslint-ts-patch": "^8.57.0-0",
     "lint-staged": "^15.2.2",
-    "nuxt": "^3.11.1",
     "simple-git-hooks": "^2.11.0",
-    "typescript": "^5.4.3",
-    "vue": "^3.4.21",
-    "vue-router": "^4.3.0",
-    "vue-tsc": "^2.0.7"
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.3"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
+    "pre-commit": "npx tsx ./scripts/verify-commit.ts && pnpm lint-staged"
   },
   "lint-staged": {
     "*": "eslint --fix"

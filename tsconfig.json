@@ -1,4 +1,30 @@
 {
-  // https://nuxt.com/docs/guide/concepts/typescript
-  "extends": "./.nuxt/tsconfig.json"
+  "compilerOptions": {
+    "target": "ESNext",
+    "baseUrl": ".",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "paths": {},
+    "resolveJsonModule": true,
+    "types": [
+      "node"
+    ],
+    "allowJs": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noEmit": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": false,
+    "forceConsistentCasingInFileNames": true
+  },
+  "exclude": [
+    "**/dist/**",
+    "**/.nuxt/**",
+    "**/nuxt.d.ts",
+    "**/examples/**",
+    "**/docs/**",
+    "**/playground/**",
+    "**/test/**"
+  ]
 }
