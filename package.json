@@ -16,20 +16,20 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@nuxt/ui": "^2.14.1"
+    "@nuxt/ui": "^2.14.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.8.0",
+    "@antfu/eslint-config": "^2.9.0",
     "bumpp": "^9.4.0",
     "eslint": "npm:eslint-ts-patch@^8.57.0-0",
     "eslint-ts-patch": "^8.57.0-0",
     "lint-staged": "^15.2.2",
-    "nuxt": "^3.10.3",
-    "simple-git-hooks": "^2.10.0",
-    "typescript": "^5.3.3",
+    "nuxt": "^3.11.1",
+    "simple-git-hooks": "^2.11.0",
+    "typescript": "^5.4.3",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0",
-    "vue-tsc": "^2.0.4"
+    "vue-tsc": "^2.0.7"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
