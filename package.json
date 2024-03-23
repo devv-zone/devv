@@ -22,7 +22,8 @@
     "typescript": "^5.4.3"
   },
   "simple-git-hooks": {
-    "pre-commit": "npx tsx ./scripts/verify-commit.ts && pnpm lint-staged"
+    "pre-commit": "pnpm lint-staged",
+    "commit-msg": "npx tsx ./scripts/verify-commit.ts"
   },
   "lint-staged": {
     "*": "eslint --fix"
