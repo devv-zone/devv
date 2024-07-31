@@ -2,6 +2,7 @@
   "name": "devv",
   "type": "module",
   "version": "0.0.0",
+  "packageManager": "pnpm@9.6.0",
   "description": "Build your community app in seconds",
   "author": "Charlie Wang <18888351756@163.com>",
   "license": "MIT",
