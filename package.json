@@ -9,6 +9,7 @@
   "keywords": [],
   "scripts": {
     "dev:client": "pnpm -F client dev",
+    "dev:serve": "pnpm -F api start:dev",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
@@ -34,7 +35,9 @@
       "are-we-there-yet": "2.0.0",
       "gauge": "3.0.2",
       "npmlog": "5.0.1",
-      "rimraf": "3.0.2"
+      "rimraf": "3.0.2",
+      "@humanwhocodes/config-array": "0.11.14",
+      "@humanwhocodes/object-schema": "2.0.3"
     }
   },
   "simple-git-hooks": {
